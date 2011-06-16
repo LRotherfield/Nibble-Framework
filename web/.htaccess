@@ -1,0 +1,17 @@
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)/?.*$ - [E=FILE:%{DOCUMENT_ROOT}/$1.php]
+
+RewriteCond %{ENV:FILE} !^$
+RewriteCond %{ENV:FILE} -f
+RewriteRule ^([^/]*)/?(.*)$ $1.php?url=$2 [QSA,L]
+
+RewriteCond %{ENV:FILE} !^$
+RewriteCond %{ENV:FILE} !-f
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+</IfModule>
