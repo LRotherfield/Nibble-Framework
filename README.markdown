@@ -37,14 +37,14 @@ and templates folders are in the root and not avaliable to the public
 
 Once these two requirements are met, ftp or deploy the software to the server
 and open up a web browser to the domain.  A simple setup routine asking for
-database information and siteadministration details is then run.  After this
+database information and site administration details is then run.  After this
 your site is up and running.
 
 ### Feedback
 Please feedback if you use the system and find any bugs or think of any
 enhancements.  Feedback can be left using the contact form at
-[nibble-development.com](httpnibble-development.comcontact-us Contact Nibble Development).
+[nibble-development.com](http://nibble-development.com/contact-us "Contact Nibble Development").
 
 Enjoy
 
-[The Nibble team](httpnibble-development.comcontact-us Contact Nibble Development)
+[The Nibble team](http://nibble-development.com/nibble-php-framework "Nibble Framework")
